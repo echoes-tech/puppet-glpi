@@ -1,0 +1,50 @@
+{
+  "name": "echoes-glpi",
+  "version": "0.1.0",
+  "author": "Echoes Technologies",
+  "summary": "Puppet module to manage GLPI installation and configuration",
+  "license": "Apache-2.0",
+  "source": "https://github.com/echoes-tech/puppet-glpi",
+  "project_page": "https://github.com/echoes-tech/puppet-glpi",
+  "issues_url": "https://github.com/echoes-tech/puppet-glpi/issues",
+  "tags": [
+    "shutdown",
+    "reboot",
+    "halt"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04",
+        "16.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.2.0 < 5.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.6.0 < 6.0.0"},
+    {"name":"puppetlabs/mysql","version_requirement":">= 2.0.0 < 3.0.0"},
+    {"name":"puppetlabs/apache","version_requirement":">= 1.0.0 < 2.0.0"},
+    {"name":"puppetlabs/vcsrepo","version_requirement":">= 1.0.0 < 2.0.0"}
+  ]
+}
